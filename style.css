@@ -1,4 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .sidebar {
-    height:100%;
-    width: 20%;
+    float: right;
+    padding: 80px;
+    max-height: 100vh;
+    min-height: 83.3vh;
+    width: 15%;
+    background: linear-gradient(162deg, rgba(0,119,255,1) 0%, rgba(164,12,250,1) 100%);
+}
+div .contact-sidebar {
+    padding: 40px;
+    background-color: rgb(255,255,255);
+    border-radius: 25px;
+}
+@keyframes sidebar-item-hover {
+    from {background-color:#fff;}
+    to {background-color: #bbb;}
+  }
+div .contact-sidebar:hover {
+    animation-name: sidebar-item-hover;
+    animation-duration: .2s;
+    background-color:#bbb
 }
